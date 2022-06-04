@@ -9,10 +9,12 @@ function FindIntersection(strArr) {
      const firstList = lists[0];
      const secondList = lists[1];
 
+
      let matchMap = {};
      let resultArr = [];
 
      firstList.forEach(num => matchMap[num] = true);
+
 
      secondList.forEach(num => {
           if (matchMap[num]) {
